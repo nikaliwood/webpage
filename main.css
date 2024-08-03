@@ -1,0 +1,159 @@
+
+@keyframes revealFromLeft {
+    from {
+        clip-path: inset(0 100% 0 0); 
+    }
+    to {
+        clip-path: inset(0 0 0 0); 
+    }
+}
+@keyframes revealFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide in from the top */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes revealFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slide in from the bottom */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  .title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    animation: revealFromTop 1s ease-out; /* Title slides in from the top */
+}
+
+.name {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 150px;
+    display: inline-block; 
+    overflow: hidden; 
+    animation: revealFromLeft 1s ease-out forwards;
+    color: rgb(244, 227, 245);
+    white-space: nowrap;
+    padding-left: 10%;
+}
+.name2{
+    display: inline-block; 
+    overflow: hidden; 
+    animation: revealFromLeft 2s ease-out forwards;
+    color: rgb(244, 227, 245);
+    white-space: nowrap;
+    padding-left: 10%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('imgs/banner.jpg');
+    background-position: center;
+     color: rgb(244, 227, 245);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: flex; 
+    gap: 10px; 
+    color: rgb(99, 26, 99);
+}
+
+.nav-button {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+
+.nav-button:hover {
+    background-color: #61c966;
+    color: #fff;
+}
+
+.nav-button.active {
+    background-color: #90cc93;
+    color: #fff;
+    font-weight: bold; 
+    transform: scale(1.05); 
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #f3eff3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #d9c5df;
+    margin-left: 10%; /* Add this line */
+    color: rgb(99, 26, 99);
+}
+
+.button:hover {
+    background-color: #ffffff;
+}
+
+.button:active {
+    background-color: #dad5d9;
+    box-shadow: 0 5px #c79acc;
+    transform: translateY(4px);
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the video containers */
+    flex-wrap: wrap; /* Wrap videos if the screen is too small */
+}
+.video-container {
+    text-align: center;
+    display: inline-block;
+    justify-items: center;
+    animation: revealFromBottom 1s ease-out;
+}
+.video-title {
+    font-size: large;
+    margin-bottom: 10px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(98, 190, 98);
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }

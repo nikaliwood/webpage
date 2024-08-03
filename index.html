@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikali Wood</title>
+    <link rel="icon" href="imgs/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-button" onclick="showContent('section1', this)">Home</div>
+        <div class="nav-button" onclick="showContent('section2', this)">Portfolio</div>
+        <div class="nav-button" onclick="showContent('section3', this)">Contact</div>
+    </div>
+
+    <div id="content-container">
+        <!-- Default content will be loaded here -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load default content when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            showContent('section1', document.querySelector('.nav-button')); // Load default section
+        });
+    </script>
+</body>
+</html>

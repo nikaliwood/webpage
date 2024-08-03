@@ -1,0 +1,82 @@
+<br><br><br><br><br><br><br><br><br><br>  
+<div id="content-container">
+   <a onload="document.name.style.opacity='1'">
+       <a class = "slide-fade1">Connect with me!</a><br>
+
+   </a>
+
+   <br>
+   <style>
+        /* Basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.slide-fade1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 100px;
+    display: inline-block;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(-100px); /* Start from the left */
+    animation: slideFadeIn1 1s forwards; /* Animation for sliding and fading */
+}
+
+.slide-fade2 {
+    opacity: 0;
+    transform: translateX(200px); /* Start from the right */
+    display: flex;
+    gap: 10px; /* Space between icons */
+    animation: slideFadeIn2 1s forwards; /* Animation for sliding and fading */
+}
+
+/* Keyframes for slide and fade in effect */
+@keyframes slideFadeIn1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* Start position */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End position */
+    }
+}
+
+@keyframes slideFadeIn2 {
+    from {
+        opacity: 0;
+        transform: translateX(200px); /* Start position */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End position */
+    }
+}
+
+
+
+   </style>
+
+
+<div class ="slide-fade2">
+    <a href="https://github.com/nikaliwood" class ="fa fa-github"></a>
+    <a href="https://www.linkedin.com/in/nikali-wood-bb6319222/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nikali.?si=NsOOMTa8e4-oBtfF" class ="fa fa-youtube"></a>
+    <a href="https://www.reddit.com/user/MundaneSyllabub7195/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class = "fa fa-reddit"></a>
+</div>
+
+<br>
+<div style = "font-family: 'Open Sans', sans-serif ;font-size: 20px;">
+    <p style="padding-left: 10%;"class="slide-fade2">@nikali on discord!</p>
+    <center><p class="slide-fade2">nikalicwood@gmail.com</p></center>
+</div>
